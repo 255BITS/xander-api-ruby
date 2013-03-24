@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'lib/xander-api'
+require 'xander-api'
 
 Gem::Specification.new do |spec|
   spec.name          = "xander-api"
-  spec.version       = Xander::Api::VERSION
+  spec.version       = Xander::VERSION
   spec.authors       = ["Martyn Garcia"]
   spec.email         = ["martyn@255bits.com"]
   spec.description   = %q{RESTful library for using xander.io, the persistent multivariate testing platform.}
@@ -21,5 +21,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
 
-  spec.add_runtime_dependency "active_resource"
+  spec.add_runtime_dependency "activeresource"
 end
